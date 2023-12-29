@@ -1,0 +1,69 @@
+## Author :- VARSA GUPTA
+
+
+**Default Welcome Intent**
+- Welcome! How may I assist you today? Feel free to say "Place a new order" or "Track an existing order."
+- Good day! How can I be of service? You may say "Initiate a new order" or "Check the status of an order."
+- Greetings! How may I help you today? You have the option to say "Start a new order" or "Track an existing order."
+
+**Default Fallback Intent**
+- Apologies, I didn't quite catch that. Please use phrases like 'Initiate a new order' or 'Check order status.' When placing a new order, specify items from our menu: Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa. Also, mention the quantity for each item, for example: "One pizza and 2 chole bhature."
+
+**Intent: new.order**
+- Begin a new order. Feel free to say things like "I'd like two pizzas and one mango lassi." Remember to provide a quantity for each item! Our menu includes Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa.
+- Starting a new order. Specify food items and quantities. For instance, you can say, "I want to order two pizzas and one mango lassi." Our available menu items are Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa.
+
+**Intent: order.add - context: ongoing-order**
+- Add to my order: 2 plates of chole bhature and one cheese pizza.
+- I'd like to add two plates of chole bhature, one cheese pizza, and 3 mango lassis, please.
+- Can you include two servings of chole bhature, one cheese pizza, and one mango lassi, please?
+- Please prepare 2 portions of chole bhature, along with one cheese pizza and 1 mango lassi for me.
+- Add 3 biryanis, 2 lassis, and 1 pav bhaji to my order.
+- I'd like to order 2 plates of chole bhature, one cheese pizza, and 1 mango lassi.
+- Include 2 orders of chole bhature, one cheese pizza, and 1 mango lassi, please.
+- I want 1 mango lassi, 2 chole bhature, and one vada pav—quickly, please.
+- Additionally, add 1 pav bhaji and 2 pizzas.
+- Also, add 2 mango lassis.
+- Moreover, include 2 mango lassis.
+- Additionally, I'd like 2 mango lassis.
+- 2 pizzas, and okay, let's add one biryani too.
+- Add 3 biryanis.
+- Oh yes, add one pav bhaji as well.
+
+**Intent: order.complete - context: ongoing-order**
+- Nope, that's all I need.
+- That completes my order.
+- Done ordering.
+- I'm finished.
+- That's it.
+
+**Intent: order.remove - context: ongoing-order**
+- Remove pav bhaji and samosa from my order, please.
+- Exclude pav bhaji and samosa from my order, please.
+- I'd like to exclude pav bhaji and samosa, please.
+- I no longer want rava dosa in my order; please remove it.
+- Exclude the rava dosa from my order, please.
+- I want to remove pizza from my order.
+- Please remove pizza from my order.
+- Delete chole from my order.
+- Please get rid of rava dosa and samosa.
+- I don't want pav bhaji; please remove it.
+- Remove pizza from my order.
+- Can you remove mango lassi?
+
+**Intent: track.order**
+- Certainly. What is your order ID?
+- Sure. Please enter your order ID.
+- Definitely. What is your order ID?
+
+**Intent: track.order - context: ongoing-tracking**
+- How about order number 32?
+- How about order number 40?
+- Here it is: order number 63321.
+- Here you go: order number 123.
+- Here is my order number 675.
+- The order ID is 453.
+- Here is my order ID: 341.
+- Order number 7890.
+- Order number 123.
+- Order number 345.
